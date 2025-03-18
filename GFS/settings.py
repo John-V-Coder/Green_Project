@@ -76,11 +76,14 @@ WSGI_APPLICATION = 'GFS.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'greensociety_db',  # database name
+        'USER': 'root',  # MySQL username
+        'PASSWORD': 'Omondijohn669',  # MySQL password
+        'HOST': 'localhost',  
+        'PORT': '3306',  
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
